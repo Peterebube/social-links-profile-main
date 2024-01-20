@@ -1,0 +1,124 @@
+@font-face {
+    font-family:"Myfont";
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "inter-regular";
+    src: url(./assets/fonts/static/Inter-Regular.ttf);;
+
+}
+
+@font-face {
+    font-family: "inter-semi-bold";
+    src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    
+}
+
+.maincontainer {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    height:96vh;
+
+}
+.container {
+    background-color: hsl(0, 0%, 12%);
+    color:hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 360px;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 18px;
+}
+.socials {
+    background-color: hsl(0, 0%, 20%);
+    padding: 6px;
+    box-sizing: border-box;
+    width: 230px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: "inter-semi-bold";
+}
+
+.socials:hover {
+    background-color:  hsl(75, 94%, 57%);
+    color:  hsl(0, 0%, 8%) ;
+}
+
+.paragraph-1 {
+    margin-top: 12px;
+    font-size: 14px;
+    font-family: "Myfont";
+    
+}
+
+.paragraph-2 {
+    font-size: 12px;
+    font-family: "inter-semi-bold";
+    color:  hsl(75, 94%, 57%);
+    margin-top: 6px;
+
+}
+
+.paragraph-3 {
+    color: hsl(0, 7%, 62%);
+    font-size: 11px;
+    margin-top: 18px;
+    font-family: "inter-regular";
+}
+
+@media (max-width: 500px)  {
+    .container {
+        height: 550px;
+    }
+    
+    .sub-container {
+        gap: 11px;
+        margin-top: 23px;
+    }
+
+    .socials {
+        padding: 14px;
+        box-sizing: border-box;
+        width: 239px;
+        font-size: 17px;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 80px;
+    }
+
+    .paragraph-1 {
+        margin-top: 18px;
+        font-size: 17px;
+    }
+
+    .paragraph-2 {
+        font-size: 10px;
+        font-family: "inter-semi-bold";
+        color:  hsl(75, 94%, 57%);
+        margin-top: 8px;
+    
+    }
+}
